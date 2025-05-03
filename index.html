@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyLearn - Interactive Python Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pyodide/0.23.4/pyodide.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="py">Py</span><span class="learn">Learn</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#basics" class="active">Basics</a></li>
+                <li><a href="#control-flow">Control Flow</a></li>
+                <li><a href="#data-structures">Data Structures</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#challenges">Challenges</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Learn Python <span class="interactively">Interactively</span></h1>
+                <p>Edit, run, and experiment with Python code directly in your browser.</p>
+                <a href="#basics" class="cta-button">Start Learning</a>
+            </div>
+            <div class="hero-image">
+                <img src="pexels-divinetechygirl-1181671.jpg" alt="Python coding illustration">
+            </div>
+        </section>
+
+        <section id="basics" class="lesson-section">
+            <h2>Python Basics</h2>
+            
+            <div class="lesson-card">
+                <h3>Hello, World!</h3>
+                <p>Let's start with the classic first program. In Python, printing text to the console is straightforward:</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input">print("Hello, World!")</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <p>The <code>print()</code> function displays the specified message on the screen. The message can be a string of text, a number, or even the result of an expression.</p>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <h3>Variables and Data Types</h3>
+                <p>Variables store data that can be used and manipulated throughout your program.</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input"># String variable
+name = "Python Learner"
+
+# Number variables
+age = 25
+height = 1.75
+
+# Boolean variable
+is_student = True
+
+# Print all variables
+print("Name:", name)
+print("Age:", age)
+print("Height:", height, "meters")
+print("Is student:", is_student)
+
+# Type checking
+print("\nVariable types:")
+print("Type of name:", type(name))
+print("Type of age:", type(age))
+print("Type of height:", type(height))
+print("Type of is_student:", type(is_student))</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <p>Python has several built-in data types:</p>
+                    <ul>
+                        <li><strong>Strings</strong>: Text enclosed in quotes (<code>"Hello"</code> or <code>'Hello'</code>)</li>
+                        <li><strong>Integers</strong>: Whole numbers without a decimal point</li>
+                        <li><strong>Floats</strong>: Numbers with a decimal point</li>
+                        <li><strong>Booleans</strong>: <code>True</code> or <code>False</code> values</li>
+                        <li><strong>Lists, Tuples, Dictionaries</strong>: Collections of values (covered later)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <h3>Basic Operations</h3>
+                <p>Python supports various mathematical and string operations.</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input"># Arithmetic operations
+a = 10
+b = 3
+
+print("Addition:", a + b)        # 13
+print("Subtraction:", a - b)     # 7
+print("Multiplication:", a * b)  # 30
+print("Division:", a / b)        # 3.3333...
+print("Integer Division:", a // b) # 3
+print("Modulus:", a % b)         # 1
+print("Exponentiation:", a ** b) # 1000
+
+# String operations
+first_name = "Python"
+last_name = "Learner"
+
+# Concatenation
+full_name = first_name + " " + last_name
+print("\nFull name:", full_name)
+
+# String repetition
+print("Python! " * 3)
+
+# String methods
+print("\nUppercase:", full_name.upper())
+print("Lowercase:", full_name.lower())
+print("Title case:", "hello world".title())</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <p>Python provides a wide range of operators for different types:</p>
+                    <ul>
+                        <li>Arithmetic operators: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>//</code>, <code>%</code>, <code>**</code></li>
+                        <li>String operators: <code>+</code> for concatenation, <code>*</code> for repetition</li>
+                        <li>String methods: useful functions like <code>.upper()</code>, <code>.lower()</code>, and <code>.title()</code></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="control-flow" class="lesson-section">
+            <h2>Control Flow</h2>
+            
+            <div class="lesson-card">
+                <h3>Conditional Statements</h3>
+                <p>Conditional statements help your program make decisions.</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input"># Get user's age (simulated)
+age = 17
+
+# Basic if-else
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")
+
+# if-elif-else
+if age < 13:
+    print("You are a child")
+elif age < 18:
+    print("You are a teenager")
+elif age < 65:
+    print("You are an adult")
+else:
+    print("You are a senior")
+
+# Nested conditions
+if age >= 16:
+    print("You can apply for a driver's permit")
+    if age >= 18:
+        print("You can vote")
+        if age >= 21:
+            print("You can purchase alcohol (in the US)")
+
+# Try changing the age value to see different outputs!</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <p>Conditional statements use the keywords <code>if</code>, <code>elif</code> (short for "else if"), and <code>else</code>. Python uses indentation to define code blocks, so be careful with your spacing!</p>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <h3>Loops</h3>
+                <p>Loops allow you to repeat code multiple times.</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input"># For loop with range
+print("Counting from 1 to 5:")
+for i in range(1, 6):
+    print(i)
+
+# For loop with a list
+print("\nLooping through a list:")
+fruits = ["apple", "banana", "cherry", "dragon fruit"]
+for fruit in fruits:
+    print(f"I like {fruit}s")
+
+# While loop
+print("\nWhile loop example:")
+count = 5
+while count > 0:
+    print(f"Countdown: {count}")
+    count -= 1
+print("Blast off!")
+
+# Break and continue
+print("\nBreak example:")
+for i in range(1, 10):
+    if i == 5:
+        print("Breaking the loop at 5")
+        break
+    print(i)
+
+print("\nContinue example:")
+for i in range(1, 6):
+    if i == 3:
+        print("Skipping 3")
+        continue
+    print(i)</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <p>Python offers two main types of loops:</p>
+                    <ul>
+                        <li><strong>For loops</strong>: Iterate over sequences (like lists, strings, or ranges)</li>
+                        <li><strong>While loops</strong>: Continue until a condition becomes False</li>
+                    </ul>
+                    <p>Special statements:</p>
+                    <ul>
+                        <li><code>break</code>: Exit the loop immediately</li>
+                        <li><code>continue</code>: Skip the rest of the current iteration and move to the next one</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="data-structures" class="lesson-section">
+            <h2>Data Structures</h2>
+            
+            <div class="lesson-card">
+                <h3>Lists</h3>
+                <p>Lists are ordered, mutable collections that can store different types of data.</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input"># Creating lists
+fruits = ["apple", "banana", "cherry"]
+mixed_list = [1, "hello", True, 3.14]
+
+print("Fruits list:", fruits)
+print("Mixed list:", mixed_list)
+
+# Accessing elements (indexing starts at 0)
+print("\nFirst fruit:", fruits[0])
+print("Last fruit:", fruits[-1])  # Negative index counts from the end
+
+# Slicing
+print("\nFirst two fruits:", fruits[0:2])
+print("Last two fruits:", fruits[-2:])
+
+# Modifying lists
+print("\n--- Modifying lists ---")
+print("Original list:", fruits)
+
+# Adding elements
+fruits.append("orange")
+print("After append():", fruits)
+
+fruits.insert(1, "kiwi")
+print("After insert():", fruits)
+
+# Removing elements
+fruits.remove("banana")
+print("After remove():", fruits)
+
+popped_fruit = fruits.pop()  # Removes and returns the last item
+print("Popped fruit:", popped_fruit)
+print("After pop():", fruits)
+
+# Other useful list operations
+numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+print("\nNumbers:", numbers)
+print("Sorted numbers:", sorted(numbers))
+print("Original numbers (unchanged):", numbers)
+
+numbers.sort()
+print("After sort():", numbers)
+
+numbers.reverse()
+print("After reverse():", numbers)
+
+print("\nLength of numbers list:", len(numbers))
+print("Sum of numbers:", sum(numbers))
+print("Minimum number:", min(numbers))
+print("Maximum number:", max(numbers))
+print("Count of 1s:", numbers.count(1))</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <p>Lists are one of Python's most versatile data structures. They can:</p>
+                    <ul>
+                        <li>Store multiple items in a single variable</li>
+                        <li>Allow duplicate values</li>
+                        <li>Be modified after creation (added to, removed from, reordered, etc.)</li>
+                        <li>Store items of different data types</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <h3>Dictionaries</h3>
+                <p>Dictionaries store data as key-value pairs, providing efficient lookups.</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input"># Creating dictionaries
+user = {
+    "name": "John Doe",
+    "age": 30,
+    "is_student": False,
+    "courses": ["Python", "JavaScript", "Data Science"]
+}
+
+print("User dictionary:", user)
+
+# Accessing values
+print("\nName:", user["name"])
+print("Age:", user["age"])
+print("Courses:", user["courses"])
+
+# Alternative access with get() (safer)
+print("\nUsing get():")
+print("Name:", user.get("name"))
+print("Email:", user.get("email"))  # Key doesn't exist
+print("Email:", user.get("email", "Not provided"))  # With default value
+
+# Modifying dictionaries
+print("\n--- Modifying dictionary ---")
+print("Original dictionary:", user)
+
+# Adding or updating values
+user["email"] = "john@example.com"
+print("After adding email:", user)
+
+user["age"] = 31  # Update existing value
+print("After updating age:", user)
+
+# Adding to nested structures
+user["courses"].append("SQL")
+print("After adding a course:", user)
+
+# Removing items
+removed_age = user.pop("age")
+print("Removed age:", removed_age)
+print("After pop():", user)
+
+# Dictionary methods
+print("\nKeys:", list(user.keys()))
+print("Values:", list(user.values()))
+print("Items (key-value pairs):", list(user.items()))
+
+# Looping through a dictionary
+print("\nLooping through dictionary:")
+for key, value in user.items():
+    print(f"{key}: {value}")</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <p>Dictionaries are useful when you need to:</p>
+                    <ul>
+                        <li>Associate values with specific keys (like a real-world dictionary)</li>
+                        <li>Look up values quickly without knowing their position</li>
+                        <li>Represent real-world objects with attributes</li>
+                    </ul>
+                    <p>Dictionary keys must be immutable (strings, numbers, tuples, not lists).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="functions" class="lesson-section">
+            <h2>Functions</h2>
+            
+            <div class="lesson-card">
+                <h3>Defining and Using Functions</h3>
+                <p>Functions are reusable blocks of code that perform specific tasks.</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input"># Simple function with no parameters
+def say_hello():
+    print("Hello, World!")
+
+# Function with parameters
+def greet(name):
+    print(f"Hello, {name}!")
+
+# Function with default parameters
+def greet_with_time(name, time_of_day="day"):
+    print(f"Good {time_of_day}, {name}!")
+
+# Function that returns a value
+def add(a, b):
+    return a + b
+
+# Function with multiple return values
+def get_user_info():
+    name = "Alice"
+    age = 30
+    country = "Wonderland"
+    return name, age, country  # Returns a tuple
+
+# Calling the functions
+print("--- Simple function ---")
+say_hello()
+
+print("\n--- Function with parameter ---")
+greet("Python Learner")
+
+print("\n--- Function with default parameter ---")
+greet_with_time("Python Learner")
+greet_with_time("Python Learner", "evening")
+
+print("\n--- Function with return value ---")
+result = add(5, 3)
+print(f"5 + 3 = {result}")
+print(f"10 + 20 = {add(10, 20)}")
+
+print("\n--- Function with multiple return values ---")
+name, age, country = get_user_info()
+print(f"{name} is {age} years old and lives in {country}")
+
+# Function with *args (variable positional arguments)
+def sum_all(*numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+print("\n--- Function with *args ---")
+print(f"Sum of 1, 2, 3: {sum_all(1, 2, 3)}")
+print(f"Sum of 5, 10, 15, 20: {sum_all(5, 10, 15, 20)}")
+
+# Function with **kwargs (variable keyword arguments)
+def display_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print("\n--- Function with **kwargs ---")
+display_info(name="Python", type="Programming Language", year=1991)</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <p>Functions help you:</p>
+                    <ul>
+                        <li>Break your code into manageable, reusable parts</li>
+                        <li>Avoid repeating code</li>
+                        <li>Make your program more organized and easier to understand</li>
+                    </ul>
+                    <p>Python functions can:</p>
+                    <ul>
+                        <li>Accept parameters (arguments)</li>
+                        <li>Have default parameter values</li>
+                        <li>Return results</li>
+                        <li>Accept variable numbers of arguments with <code>*args</code> and <code>**kwargs</code></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <h3>Lambda Functions</h3>
+                <p>Lambda functions are small, anonymous functions defined with the <code>lambda</code> keyword.</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input"># Regular function
+def square(x):
+    return x ** 2
+
+# Equivalent lambda function
+square_lambda = lambda x: x ** 2
+
+print("Using regular function:", square(5))
+print("Using lambda function:", square_lambda(5))
+
+# Lambda with multiple parameters
+add = lambda a, b: a + b
+print("\nLambda addition:", add(3, 4))
+
+# Using lambda with built-in functions
+numbers = [1, 5, 3, 9, 7, 2, 8, 4, 6]
+
+# Using lambda with map()
+squared_numbers = list(map(lambda x: x ** 2, numbers))
+print("\nOriginal numbers:", numbers)
+print("Squared numbers (using map):", squared_numbers)
+
+# Using lambda with filter()
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print("Even numbers (using filter):", even_numbers)
+
+# Using lambda with sorted()
+words = ["apple", "banana", "cherry", "date", "elderberry", "fig"]
+sorted_by_length = sorted(words, key=lambda word: len(word))
+print("\nWords:", words)
+print("Words sorted by length:", sorted_by_length)
+
+# Practical example: custom sorting
+students = [
+    {"name": "Alice", "grade": 85},
+    {"name": "Bob", "grade": 92},
+    {"name": "Charlie", "grade": 78},
+    {"name": "Diana", "grade": 95}
+]
+
+# Sort by grade (highest first)
+sorted_by_grade = sorted(students, key=lambda student: student["grade"], reverse=True)
+
+print("\nStudents sorted by grade:")
+for student in sorted_by_grade:
+    print(f"{student['name']}: {student['grade']}")</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <p>Lambda functions are useful when you need a small function for a short period of time, particularly as arguments to higher-order functions like <code>map()</code>, <code>filter()</code>, and <code>sorted()</code>.</p>
+                    <p>Syntax: <code>lambda arguments: expression</code></p>
+                    <p>Limitations:</p>
+                    <ul>
+                        <li>Can only contain a single expression</li>
+                        <li>Cannot contain statements or annotations</li>
+                        <li>Limited to simple operations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="challenges" class="lesson-section">
+            <h2>Coding Challenges</h2>
+            
+            <div class="lesson-card">
+                <h3>Challenge 1: FizzBuzz</h3>
+                <p>Write a program that prints numbers from 1 to 100. But for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers that are multiples of both 3 and 5, print "FizzBuzz".</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input"># Write your FizzBuzz solution here
+# Hint: Use a for loop and conditionals
+
+# Solution will be below this line (try solving it yourself first!)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Solution:
+for num in range(1, 101):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
+    else:
+        print(num)</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <h3>Challenge 2: Palindrome Checker</h3>
+                <p>Write a function that checks if a given string is a palindrome (reads the same forwards and backwards, ignoring case and non-alphanumeric characters).</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input"># Write your palindrome checker function here
+# Hint: You might need to remove spaces and punctuation
+
+# Solution will be below this line (try solving it yourself first!)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Solution:
+def is_palindrome(text):
+    # Remove non-alphanumeric characters and convert to lowercase
+    clean_text = ""
+    for char in text.lower():
+        if char.isalnum():
+            clean_text += char
+    
+    # Check if the cleaned text is equal to its reverse
+    return clean_text == clean_text[::-1]
+
+# Test cases
+test_strings = [
+    "racecar",
+    "A man, a plan, a canal: Panama",
+    "No 'x' in Nixon",
+    "Was it a car or a cat I saw?",
+    "Python is awesome",
+    "Madam, in Eden, I'm Adam"
+]
+
+for string in test_strings:
+    result = "is" if is_palindrome(string) else "is not"
+    print(f'"{string}" {result} a palindrome.')</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <h3>Challenge 3: Simple Calculator</h3>
+                <p>Create a simple calculator that can perform basic operations (addition, subtraction, multiplication, division) based on user input.</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>Code Editor</span>
+                        <button class="run-btn">Run Code</button>
+                    </div>
+                    <textarea class="code-input"># Write your calculator program here
+# Hint: Define functions for each operation
+
+# Solution will be below this line (try solving it yourself first!)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Solution:
+def calculator():
+    print("Simple Calculator")
+    print("Operations: +, -, *, /")
+    
+    # In a web context, we'll simulate user input
+    num1 = float(input("Enter first number: "))
+    operator = input("Enter operator: ")
+    num2 = float(input("Enter second number: "))
+    
+    result = None
+    
+    if operator == "+":
+        result = num1 + num2
+    elif operator == "-":
+        result = num1 - num2
+    elif operator == "*":
+        result = num1 * num2
+    elif operator == "/":
+        if num2 == 0:
+            return "Error: Division by zero"
+        result = num1 / num2
+    else:
+        return "Error: Invalid operator"
+    
+    return f"{num1} {operator} {num2} = {result}"
+
+# Note: The input() function won't work in this browser environment
+# So we'll simulate it with predefined values
+def input(prompt):
+    print(prompt)
+    if "first" in prompt:
+        return "10"
+    elif "operator" in prompt:
+        return "+"
+    elif "second" in prompt:
+        return "5"
+
+print(calculator())</textarea>
+                    <div class="output-container">
+                        <div class="output-header">Output</div>
+                        <div class="code-output"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="py">Py</span><span class="learn">Learn</span>
+            </div>
+            <p>An interactive Python learning platform. Edit and run code directly in your browser!</p>
+            <p class="copyright">© 2025 PyLearn. Created for educational purposes.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
